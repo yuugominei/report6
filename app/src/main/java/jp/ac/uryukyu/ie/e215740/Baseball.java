@@ -3,6 +3,9 @@ package jp.ac.uryukyu.ie.e215740;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * Baseballクラス
+ */
 public class Baseball{
     static String [][] strikezone = { { "・", "・", "・" }, { "・", "・", "・" }, { "・", "・", "・" } };
     int strikeCount = 0;
@@ -11,6 +14,9 @@ public class Baseball{
     static boolean aim = false;
     boolean gameSet = false;
     
+    /**
+     * ストライクゾーンを生み出す
+     */
     public void zone(){
         for(int a = 0; a < 3; a++){
             for(int b = 0; b < 3; b++){
@@ -20,6 +26,10 @@ public class Baseball{
             System.out.println();
         }
     }
+
+    /**
+     * ピッチャーの動きを決定する
+     */
     public void pitcher(){
         
         if(strikeCount < 3){
@@ -32,6 +42,10 @@ public class Baseball{
         }       
         System.out.println("ピッチャー構えます");
     }
+
+    /**
+     * バッターの動きを決定し、その後の結果によって終わり方を決める
+     */
     public void batter(){
         Scanner scanLength = new Scanner(System.in);
         Scanner scanWidth = new Scanner(System.in);
