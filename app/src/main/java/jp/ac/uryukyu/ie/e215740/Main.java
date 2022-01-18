@@ -5,6 +5,7 @@ package jp.ac.uryukyu.ie.e215740;
  */
 public class Main {
     /**
+     *mainメソッド
      * @param args
      */
     public static void main(String[]args){
