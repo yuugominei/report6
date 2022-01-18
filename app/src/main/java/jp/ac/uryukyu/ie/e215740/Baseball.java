@@ -15,7 +15,7 @@ public class Baseball{
     boolean gameSet = false;
     
     /**
-     * ストライクゾーンを生み出す
+     * ストライクゾーンを生み出すメソッド
      */
     public void zone(){
         for(int a = 0; a < 3; a++){
@@ -28,7 +28,7 @@ public class Baseball{
     }
 
     /**
-     * ピッチャーの動きを決定する
+     * ピッチャーの動きを決定するメソッド
      */
     public void pitcher(){
         
@@ -44,7 +44,7 @@ public class Baseball{
     }
 
     /**
-     * バッターの動きを決定し、その後の結果によって終わり方を決める
+     * バッターの動きを決定し、その後の結果によって終わり方を決めるメソッド
      */
     public void batter(){
         Scanner scanLength = new Scanner(System.in);
